@@ -121,4 +121,4 @@ for f in $SOURCES; do
     OBJS=( "${OBJS[@]}" "${obj}" )
 done
 
-"${CC}" ${LDFLAGS} "${OBJS[@]}" -o $OUTDIR/../tun2socks -lrt -lpthread
+"${CC}" ${LDFLAGS} "${OBJS[@]}" -o $OUTDIR/../tun2socks
