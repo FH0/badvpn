@@ -702,9 +702,8 @@ int parse_arguments (int argc, char *argv[])
             }
             options.udpgw_remote_server_addr = argv[i + 1];
             i++;
-        }
 #endif
-         }
+        }
 #ifdef BADVPN_SOCKS_UDP_RELAY
         else if (!strcmp(arg, "--udprelay-max-connections")) {
 #else
