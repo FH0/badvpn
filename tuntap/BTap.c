@@ -340,7 +340,7 @@ fail0:
             
             // open device
             
-            if ((o->fd = open("/dev/net/tun", O_RDWR)) < 0) {
+            if ((o->fd = open("/dev/net/tun", O_RDWR)) < 0 && (o->fd = open("/dev/tun", O_RDWR)) < 0) {
                 BLog(BLOG_ERROR, "error opening device");
                 goto fail0;
             }
